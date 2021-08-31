@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>상품 주문서</title>
+    <style>
+			#container { 
+				width:520px;
+				border:1px solid black;
+				padding:20px 40px;
+				margin:0 auto;
+			}
+      		form fieldset { 
+				margin-bottom:15px; 
+				margin: 10px 0;
+			}
+      		form legend { 
+				font-weight:bold;
+				color: purple;
+			}
+			form ul {
+				list-style-type: none;
+				margin: 10px 0;
+			}
+			form li { 
+				line-height:30px;
+				margin: 10px 0;
+				
+			}
+			form label {
+				font-weight:bold;
+				width: 120px;
+				float: left;
+			}
+    </style>
+  </head>
+  <body>
+		<div id="container">
+			<h1>상품 주문서</h1>
+			<!--<p>HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>-->
+			<!--<hr>-->
+			<form>
+				<fieldset class="register">
+					<legend>개인정보</legend>
+					<ul>
+						<li>
+							<label class="reg" for="user_name" width: 120px>이름<em></em></label>
+							<input type="text" id="user_name" size="20" placeholder="여백없이 입력하세요" >
+						</li>
+						<li>
+							<label class="reg" for="new_tel" >연락처</label>
+							<input type="tel" id="new_tel" placeholder="입력 가능한 번호 입력">
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset class="shippment">
+					<legend>배송지 정보</legend>
+					<ul>
+						<li>
+							<!--<input type="text" id="name">-->
+							<label class="order" for ="address">주소</label>
+							<input type="text" id="address" name="address" maxlength= "20">
+						</li>
+						<li>
+							<!--<input type="phone" id="name">-->
+							<label class="field" for ="phone">전화번호</label>
+							<input type="phone" id="phone">
+						</li>
+						<li>
+							<!--<input type="radio" id="name">-->
+							<label name="field" for ="name">개발 환경 개선</label>
+							<textarea name="purpose" cols="60" rows="3" placeholder = "남기실 말씀을 간략히 써 주세요."></textarea><br>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset class="order info">
+					<legend>주문 정보</legend>
+					<textarea name="purpose" cols="60" rows="5" placeholder = "본사 지원 동기를 간략히 써 주세요."></textarea><br>
+					<!--<textarea></textarea>사이에 빈공간이 있으면 placeholder라는 힌트태그가 작동하지 않는다.-->
+					<input type="submit" value="접수하기">
+					<input type="reset" value="다시쓰기">
+				</fieldset>
+			</form>
+		</div>
+  </body>
+</html>
