@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>radius</title>
+    <style>
+        div {
+            width: 300px;
+            height: 200px;
+            margin: 20px;
+            display: inline-block;
+        }
+        .round {
+            border:2px solid red;
+            border-radius: 20px;
+        }
+        .round1 {
+            border: 2px solid red;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+        .round2 {
+            border: 2px solid red;
+            border-radius: 20px 70;
+        }
+        #bg {
+            background: url(images/pic1.jpg) no-repeat;
+            background-size: cover;
+        }
+        #bg1 {
+            background: url(images/pic1.jpg) no-repeat;
+            background-size: cover;
+        }
+        #bg2 {
+            background: url(images/pic1.jpg) no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="round"></div>
+    <div class="round" id="bg"></div>
+    <div class="round" id="bg1"></div>
+    <div class="round" id="bg2"></div>
+</body>
+</html>
