@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경 적용 범위 지정</title>
+    <style>
+        div {
+            width: 300px;
+            padding: 35px;
+            border: 5px dotted #222;
+            background-color: skyblue;
+            margin-bottom: 20px;
+        }
+        .bg1 {
+            background-clip: border-box;
+        }
+        .bg2 {
+            background-clip: padding-box;
+        }
+        .bg3 {
+            background-clip: content-box;
+        }
+    </style>
+</head>
+<body>
+    <!--p.align-left*4-->
+    <div class="bg1">
+        <p>
+            Integer elementum massa at ulla placerat varius.
+            Suspendisse in libero risus, in interdum massa.
+            Vestibulm ac leo vitae metus faucibus gravida ac in neque.
+            Nullam est eros, suscipi sed dictum quis, accumsan a ligula.
+        </p>
+    </div>
+    <div class="bg2">
+        <p>
+            Integer elementum massa at ulla placerat varius.
+            Suspendisse in libero risus, in interdum massa.
+            Vestibulm ac leo vitae metus faucibus gravida ac in neque.
+            Nullam est eros, suscipi sed dictum quis, accumsan a ligula.
+        </p>
+    </div>
+    <div class="bg3">   
+        <p>
+            Integer elementum massa at ulla placerat varius.
+            Suspendisse in libero risus, in interdum massa.
+            Vestibulm ac leo vitae metus faucibus gravida ac in neque.
+            Nullam est eros, suscipi sed dictum quis, accumsan a ligula.
+        </p>
+    </div>
+</body>
+</html>

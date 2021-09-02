@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>원형 그라데이션</title>
+    <style>
+        div {
+            width: 500px;
+            height: 300px;
+            margin: 10px;
+        }
+        .grad1 {
+            background: red;
+            /*구형 브라우저*/
+            background: -webkit-radial-gradient(white, yellow, red);
+            background: -moz-radial-gradient(white, yellow, red);
+            background: -o-radial-gradient(white, yellow, red);
+            background: radial-gradient(white, yellow, red);
+        }
+        .grad2 {
+            background: red;
+            /*구형 브라우저*/
+            background: -webkit-radial-gradient(circle, white, yellow, red);
+            background: -moz-radial-gradient(circle, white, yellow, red);
+            background: -o-radial-gradient(circle, white, yellow, red);
+            background: radial-gradient(circle, white, yellow, red);
+        }
+    </style>
+</head>
+<body>
+    <div class="grad1"></div>
+    <div class="grad2"></div>
+</body>
+</html>
